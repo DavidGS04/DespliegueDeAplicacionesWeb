@@ -58,9 +58,3 @@ Este repositorio contiene una colección de ejercicios prácticos relacionados c
 | 6️⃣ | Práctica Final 1º Trim. | Proyecto completo de servidor web | [📁 Abrir](./06_Practica_Servidor_Web/README.md) |
 
 ---
-
-## 💡 Notas Importantes
-
-- ⛔ **Detener servidor activo:**
-  ```bash
-  Ctrl + C

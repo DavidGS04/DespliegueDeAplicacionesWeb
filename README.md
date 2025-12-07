@@ -1,37 +1,66 @@
 # 🌐 Despliegue de Aplicaciones Web
 
-## 📋 Descripción
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Apache](https://img.shields.io/badge/Apache-Servidor-red?logo=apache)
+![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow)
+![Licencia](https://img.shields.io/badge/Licencia-Educativa-green)
 
-Este repositorio contiene ejercicios y prácticas relacionadas con el despliegue de aplicaciones web, enfocándose en la configuración y uso de servidores web básicos con Python.
+> 📦 Repositorio de prácticas sobre **despliegue y configuración de servidores web** con Python y Apache.
 
-## 🔧 Requisitos
+---
 
-- Python 3.x instalado
-- Navegador web
-- Conexión a internet para acceder a los recursos
+## 📑 Índice
+- [📖 Descripción](#-descripción)
+- [✅ Requisitos](#-requisitos)
+- [📚 Recursos de Referencia](#-recursos-de-referencia)
+- [🚀 Ejercicios Realizados](#-ejercicios-realizados)
+- [💡 Notas Importantes](#-notas-importantes)
+- [🧑‍💻 Autor](#-autor)
 
-## 📚 Recursos de referencia
+---
 
-- [Simple web server (Python)](https://docs.python.org/3/library/http.server.html)
-- [HTTP Server Implementation](https://github.com/python/cpython/blob/main/Lib/http/server.py)
-- [Dummy Web Server Example](https://gist.github.com/kabinpokhrel/6fd1275603e9d5f1e284be717cbd1bff)
+## 📖 Descripción
+Este repositorio contiene una colección de ejercicios prácticos relacionados con el **despliegue de aplicaciones web**, enfocados en:
 
-## 🚀 Ejercicios realizados
+- Configuración de servidores web con **Python**
+- Instalación de **Apache, MySQL y PHP**
+- Gestión de directivas y archivos de configuración
+- Prácticas reales de servidor web
 
-### [📁 Ejercicio 1: Servidor HTTP básico](./01_ServidorHTTPBasico/README.MD)
+---
 
-### [📁 Ejercicio 2: Servidor personalizado](./02_ServidorPersonalizado/README.MD)
+## ✅ Requisitos
 
-### [📁 Ejercicio 3: Instalación de Apache, MySQL y PHP](./03_InstalacionApache/README.MD)
+- 🐍 **Python 3.x**
+- 🌍 **Navegador Web**
+- 🔌 **Conexión a Internet**
+- 🐧 Sistema Linux recomendado (Ubuntu/Debian)
 
-### [📁 Ejercicio 4: Cambiar configuracion de apache](./04_cambiosApache/README.MD)
+---
 
-### [📁 Ejercicio 5: Directiva directory](./05_DirectivaDirectory/README.MD)
+## 📚 Recursos de Referencia
 
-### [📁 Ejercicio 6: Practica Servidor Web 1 Trimestre](./06_Practica_Servidor_Web/README.md)
+- 🔗 [Simple Web Server (Python)](https://docs.python.org/3/library/http.server.html)
+- 🔗 [HTTP Server Implementation](https://github.com/python/cpython/blob/main/Lib/http/server.py)
+- 🔗 [Dummy Web Server Example](https://gist.github.com/kabinpokhrel/6fd1275603e9d5f1e284be717cbd1bff)
 
-## 💡 Notas adicionales
+---
 
-- Para detener cualquier servidor, presionar `Ctrl+C` en la línea de comandos
-- Para salir de mysql, usa el comando `exit`
-- Para cerrar apache2, usa el comando `sudo service apache2 stop`
+## 🚀 Ejercicios Realizados
+
+| Nº | Ejercicio | Descripción | Enlace |
+|----|-----------|-------------|--------|
+| 1️⃣ | Servidor HTTP básico | Creación de servidor simple con Python | [📁 Abrir](./01_ServidorHTTPBasico/README.MD) |
+| 2️⃣ | Servidor personalizado | Servidor con manejador propio | [📁 Abrir](./02_ServidorPersonalizado/README.MD) |
+| 3️⃣ | Apache, MySQL y PHP | Instalación del entorno LAMP | [📁 Abrir](./03_InstalacionApache/README.MD) |
+| 4️⃣ | Configuración Apache | Modificación de puertos y archivos | [📁 Abrir](./04_cambiosApache/README.MD) |
+| 5️⃣ | Directiva `Directory` | Control de accesos por carpetas | [📁 Abrir](./05_DirectivaDirectory/README.MD) |
+| 6️⃣ | Práctica Final 1º Trim. | Proyecto completo de servidor web | [📁 Abrir](./06_Practica_Servidor_Web/README.md) |
+
+---
+
+## 💡 Notas Importantes
+
+- ⛔ **Detener servidor activo:**
+  ```bash
+  Ctrl + C

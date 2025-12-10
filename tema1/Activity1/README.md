@@ -1,6 +1,6 @@
-# 🧩 Activity #1 – Instalación de Apache, MySQL y PHP (LAMP)
+# 🧩 Activity #1 – Instalación de Apache, MySQL y PHP
 
-En esta actividad aprenderás a instalar y comprobar el funcionamiento de un servidor web completo **LAMP** sobre Ubuntu 20.04/22.04:  
+En esta actividad aprenderás a instalar y comprobar el funcionamiento de un servidor web en Ubuntu.
 ✔ Apache  
 ✔ MySQL  
 ✔ PHP  
@@ -29,7 +29,7 @@ sudo apt upgrade -y
 ```
 
 ### 📸 *Captura 1: Evidencia del comando `apt update` y `apt upgrade` ejecutándose*
-![Captura1](ruta-de-tu-imagen.png)
+![Captura1](/recursos/Activity1/apache1.png)
 
 ---
 
@@ -40,7 +40,7 @@ sudo apt install apache2 -y
 ```
 
 ### 📸 *Captura 2: Instalación de Apache desde la terminal*
-![Captura2](ruta-de-tu-imagen.png)
+![Captura2](/recursos/Activity1/apache2.png)
 
 ---
 
@@ -57,7 +57,7 @@ active (running)
 ```
 
 ### 📸 *Captura 3: Evidencia del estado “active (running)”*
-![Captura3](ruta-de-tu-imagen.png)
+![Captura3](/recursos/Activity1/apache3.png)
 
 ---
 
@@ -70,7 +70,7 @@ http://localhost
 ```
 
 ### 📸 *Captura 4: Página de bienvenida de Apache en el navegador*
-![Captura4](ruta-de-tu-imagen.png)
+![Captura4](/recursos/Activity1/apache4.png)
 
 ---
 
@@ -82,7 +82,7 @@ sudo ufw status
 ```
 
 ### 📸 *Captura 5: Evidencia de regla activada en UFW*
-![Captura5](ruta-de-tu-imagen.png)
+![Captura5](/recursos/Activity1/apache5.png)
 
 ---
 
@@ -99,7 +99,7 @@ sudo systemctl status mysql
 ```
 
 ### 📸 *Captura 6: MySQL en ejecución*
-![Captura6](ruta-de-tu-imagen.png)
+![Captura6](/recursos/Activity1/apache6.png)
 
 Ejecutar script de seguridad:
 
@@ -108,7 +108,7 @@ sudo mysql_secure_installation
 ```
 
 ### 📸 *Captura 7: Proceso mysql_secure_installation*
-![Captura7](ruta-de-tu-imagen.png)
+![Captura7](/recursos/Activity1/apache7.png)
 
 ---
 
@@ -125,7 +125,7 @@ php -v
 ```
 
 ### 📸 *Captura 8: PHP instalado correctamente*
-![Captura8](ruta-de-tu-imagen.png)
+![Captura8](/recursos/Activity1/apache8.png)
 
 Reiniciar Apache:
 
@@ -150,7 +150,7 @@ http://localhost/info.php
 ```
 
 ### 📸 *Captura 9: Página PHP Info funcionando*
-![Captura9](ruta-de-tu-imagen.png)
+![Captura9](/recursos/Activity1/apache9.png)
 
 (Después puedes eliminarlo por seguridad)
 
@@ -159,24 +159,3 @@ sudo rm /var/www/html/info.php
 ```
 
 ---
-
-# 📁 Rutas importantes del stack LAMP
-
-| Ruta | Descripción |
-|------|-------------|
-| `/var/www/html/` | Carpeta principal del sitio web |
-| `/etc/apache2/apache2.conf` | Configuración principal de Apache |
-| `/etc/apache2/sites-available/` | VirtualHosts |
-| `/etc/mysql/` | Configuración de MySQL |
-| `/etc/php/` | Configuración de PHP |
-
----
-
-# 📸 Evidencias adicionales (opcional)
-
-![Extra1](ruta.png)  
-![Extra2](ruta.png)
-
----
-
-# ✔ Actividad completada

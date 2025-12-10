@@ -22,7 +22,7 @@ sudo apt upgrade -y
 ```
 
 ### 📸 *Captura 1: Evidencia del comando `apt update` y `apt upgrade` ejecutándose*
-![Captura1](ruta-de-tu-imagen.png)
+![Captura1](recursos/Activity1/apache1.png)
 
 ---
 

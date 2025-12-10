@@ -1,4 +1,4 @@
-# 🧩 Activity #8 – Virtual Hosts en Apache
+# 🧩 Activity #8 – VirtualHost
 
 En esta actividad aprenderás a configurar **Virtual Hosts** en Apache para alojar múltiples sitios web en un mismo servidor.  
 Basado en la documentación oficial y recursos proporcionados por el profesor.

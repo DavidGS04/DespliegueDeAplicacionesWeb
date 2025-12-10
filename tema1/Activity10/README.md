@@ -1,4 +1,4 @@
-# 🧩 Activity #10 – SSL, Certificados y HTTPS en Apache
+# 🧩 Activity #10 – SSL
 
 En esta actividad aprenderás a instalar y configurar certificados **SSL**, tanto **autofirmados** como **Let's Encrypt**, en un servidor Apache alojado en una instancia **AWS EC2 con IP pública**.
 

@@ -6,6 +6,24 @@
 
 > 📦 Repositorio de ejercicios sobre **Despliegue y Configuración de Servidores Web** con Python y Apache.
 
+## 📂 **Estructura del Repositorio**
+```
+tareas-despliegue-aplicaciones-web/
+│
+├── tema1-servidores-web/
+│   ├── Activity1/
+│   ├── Activity2/
+│   ├── Activity5/
+│   ├── Activity6/
+│   ├── Activity7/
+│   ├── Activity8/
+│   ├── Activity9/
+│   ├── Activity10/
+│   └── README.md
+│
+└── proyecto-1er-trimestre/
+```
+
 ## 🧩 Ejercicios Realizados
 
 | Nº | Ejercicio | Descripción | Enlace |
@@ -25,4 +43,4 @@
 
 | Nº | Proyecto | Descripción | Enlace |
 |----|----------|-------------|--------|
-| 🔟 | Servidores web | Trabajo 1º trimestre | [📁 Abrir](./Activity10/README.md) |
+| 🔟 | Servidores web | Trabajo 1º trimestre | [📁 Abrir](./proyecto-1er-trimestre/README.md) |

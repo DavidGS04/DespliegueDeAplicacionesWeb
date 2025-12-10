@@ -10,7 +10,7 @@
 ```
 tareas-despliegue-aplicaciones-web/
 │
-├── tema1-servidores-web/
+├── tema1/
 │   ├── Activity1/
 │   ├── Activity2/
 │   ├── Activity5/
@@ -20,6 +20,8 @@ tareas-despliegue-aplicaciones-web/
 │   ├── Activity9/
 │   ├── Activity10/
 │   └── README.md
+│
+├── recursos
 │
 └── proyecto-1er-trimestre/
 ```

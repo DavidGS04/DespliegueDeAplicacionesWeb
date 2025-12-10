@@ -4,7 +4,7 @@
 ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow)
 ![Licencia](https://img.shields.io/badge/Licencia-Educativa-green)
 
-> 📦 Repositorio de ejercicios sobre **Despliegue y Configuración de Servidores Web** con Python y Apache.
+> 📦 Repositorio de la asignatura Despliegue de Aplicaciones Web - David Garrido
 
 ## 📂 **Estructura del Repositorio**
 ```

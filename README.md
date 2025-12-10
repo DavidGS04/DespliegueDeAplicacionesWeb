@@ -26,11 +26,11 @@ tareas-despliegue-aplicaciones-web/
 └── proyecto-1er-trimestre/
 ```
 
-## 🧩 Ejercicios Realizados
+## 🧩 Ejercicios Tema 1
 
 | Nº | Ejercicio | Descripción | Enlace |
 |----|-----------|-------------|--------|
-| 1️⃣ | Instalación de Apache | Instalación inicial del servidor Apache | [📁 Abrir](./Activity1/README.md) |
+| 1️⃣ | Instalación de Apache | Instalación inicial del servidor Apache | [📁 Abrir](./tema1/Activity1/README.md) |
 | 2️⃣ | Configuración básica de Apache | Ajustes iniciales y estructura de configuración | [📁 Abrir](./Activity2/README.md) |
 | 5️⃣ | Directiva `Directory` | Control de accesos en directorios | [📁 Abrir](./Activity5/README.md) |
 | 6️⃣ | Expresiones regulares | Uso de regex dentro de Apache | [📁 Abrir](./Activity6/README.md) |

@@ -1,4 +1,4 @@
-# 🧩 Activity #1 – Instalación de Apache, MySQL y PHP (Stack LAMP)
+# 🧩 Activity #1 – Instalación de Apache, MySQL y PHP
 
 En esta actividad instalarás un entorno **LAMP** completo en Ubuntu:  
 ✔ **L**inux  
@@ -131,6 +131,9 @@ http://localhost/info.php
 sudo rm /var/www/html/info.php
 ```
 
+### 📸 *Captura 8 – Eliminar archivo*
+![cap7](ruta.png)
+
 ---
 
 # 📁 Directorios importantes
@@ -143,12 +146,3 @@ sudo rm /var/www/html/info.php
 | Configuración PHP | `/etc/php/` |
 
 ---
-
-# 📸 Evidencias adicionales
-
-`![extra1](ruta.png)`  
-`![extra2](ruta.png)`
-
----
-
-# ✔ Actividad completada

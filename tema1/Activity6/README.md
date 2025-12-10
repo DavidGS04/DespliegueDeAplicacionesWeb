@@ -1,6 +1,4 @@
 # 🧩 Activity #6 – Expresiones Regulares en Apache y Linux  
-*(Basado en el documento proporcionado por el profesor)*  
-fileciteturn2file0
 
 En esta actividad aprenderás a trabajar con **expresiones regulares (regex)** aplicadas a configuraciones de Apache y validaciones en general.  
 Estas regex permiten filtrar, validar, redirigir y manipular patrones dentro de URLs, rutas o cadenas.
@@ -159,15 +157,3 @@ Ejemplo: `4.5e10`, `-2.3E-4`
 ```
 
 ---
-
-# 📸 Zona de evidencias
-
-Agrega aquí capturas del regex funcionando en herramientas como Regex101 o Regexr.
-
-`![evidencia](ruta.png)`  
-`![evidencia2](ruta.png)`
-
----
-
-# ✔ Actividad completada
-

@@ -1,4 +1,4 @@
-# 🧩 Activity #9 – Autenticación en Apache (AuthenticationURL)
+# 🧩 Activity #9 – Authentication
 
 En esta actividad aprenderás a configurar **autenticación básica**, creación de usuarios, grupos y el uso de las directivas `Require`, `AuthType`, `AuthUserFile`, `AuthGroupFile` y `Satisfy`.
 

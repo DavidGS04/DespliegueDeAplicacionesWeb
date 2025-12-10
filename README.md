@@ -10,11 +10,11 @@
 
 | Nº | Ejercicio | Descripción | Enlace |
 |----|-----------|-------------|--------|
-| 1️⃣ | Servidor HTTP básico | Creación de servidor simple con Python | [📁 Abrir](./01_ServidorHTTPBasico/README.MD) |
-| 2️⃣ | Servidor personalizado | Servidor con manejador propio | [📁 Abrir](./02_ServidorPersonalizado/README.MD) |
-| 3️⃣ | Apache, MySQL y PHP | Instalación del entorno LAMP | [📁 Abrir](./03_InstalacionApache/README.MD) |
-| 4️⃣ | Configuración Apache | Modificación de puertos y archivos | [📁 Abrir](./04_cambiosApache/README.MD) |
-| 5️⃣ | Directiva `Directory` | Control de accesos por carpetas | [📁 Abrir](./05_DirectivaDirectory/README.MD) |
-| 6️⃣ | Práctica Final 1º Trim. | Proyecto completo de servidor web | [📁 Abrir](./06_Practica_Servidor_Web/README.md) |
-
----
+| 1️⃣ | Instalación de Apache | Instalación inicial del servidor Apache | [📁 Abrir](./Activity1/README.md) |
+| 2️⃣ | Configuración básica de Apache | Ajustes iniciales y estructura de configuración | [📁 Abrir](./Activity2/README.md) |
+| 5️⃣ | Directiva `Directory` | Control de accesos en directorios | [📁 Abrir](./Activity5/README.md) |
+| 6️⃣ | Expresiones regulares | Uso de regex dentro de Apache | [📁 Abrir](./Activity6/README.md) |
+| 7️⃣ | Reescritura (Rewrite) | Reglas de reescritura con mod_rewrite | [📁 Abrir](./Activity7/README.md) |
+| 8️⃣ | VirtualHost | Configuración de múltiples sitios con VirtualHost | [📁 Abrir](./Activity8/README.md) |
+| 9️⃣ | AuthenticationURL | Autenticación basada en URL | [📁 Abrir](./Activity9-AuthenticationURL/README.md) |
+| 🔟 | SSL | Configuración de HTTPS con SSL/TLS | [📁 Abrir](./Activity10/README.md) |

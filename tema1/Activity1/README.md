@@ -1,11 +1,10 @@
 # 🧩 Activity #1 – Instalación de Apache, MySQL y PHP
 
 En esta actividad aprenderás a instalar y comprobar el funcionamiento de un servidor web en Ubuntu.
+
 ✔ Apache  
 ✔ MySQL  
 ✔ PHP  
-
-El objetivo es dejar el entorno funcionando y demostrarlo con capturas de evidencia.
 
 ---
 

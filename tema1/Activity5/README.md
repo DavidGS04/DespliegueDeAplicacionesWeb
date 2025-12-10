@@ -2,7 +2,6 @@
 *(Basado en el enunciado proporcionado)*
 
 En esta actividad trabajaremos con control de acceso en Apache mediante las directivas **Directory**, **Require**, dominios, IPs y máscaras de red.  
-Todas las instrucciones están basadas en el documento entregado por el profesor. fileciteturn1file0
 
 ---
 
@@ -135,13 +134,3 @@ Require ip 10.3.0.0/16
 ![captura5](ruta.png)
 
 ---
-
-# 📸 Zona de evidencias adicionales
-Añade aquí imágenes de pruebas en navegador, fallos 403, accesos permitidos, etc.
-
-`![evidencia extra](ruta.png)`
-`![evidencia extra](ruta.png)`
-
----
-
-# ✔ Actividad completada

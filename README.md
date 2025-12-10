@@ -6,7 +6,7 @@
 
 > 📦 Repositorio de ejercicios sobre **Despliegue y Configuración de Servidores Web** con Python y Apache.
 
-## 🚀 Ejercicios Realizados
+## 🧩 Ejercicios Realizados
 
 | Nº | Ejercicio | Descripción | Enlace |
 |----|-----------|-------------|--------|
@@ -18,3 +18,8 @@
 | 8️⃣ | VirtualHost | Configuración de múltiples sitios con VirtualHost | [📁 Abrir](./Activity8/README.md) |
 | 9️⃣ | Authentication | Autenticación basada en URL | [📁 Abrir](./Activity9-AuthenticationURL/README.md) |
 | 🔟 | SSL | Configuración de HTTPS con SSL/TLS | [📁 Abrir](./Activity10/README.md) |
+
+---
+
+## 🚀 Proyecto 1º Trimestre
+| 🔟 | Servidores web | Trabajo 1º trimestre | [📁 Abrir](./Activity10/README.md) |

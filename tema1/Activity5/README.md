@@ -1,4 +1,4 @@
-# 🧩 Activity #5 – Directiva **Directory** en Apache  
+# 🧩 Activity #5 – Directiva **Directory**
 
 En esta actividad trabajaremos con control de acceso en Apache mediante las directivas **Directory**, **Require**, dominios, IPs y máscaras de red.  
 

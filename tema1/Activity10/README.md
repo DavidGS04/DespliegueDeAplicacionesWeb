@@ -186,27 +186,3 @@ sudo certbot renew --dry-run
 ```
 
 ---
-
-# 📝 Zona de evidencias
-
-Aquí debes añadir todas las capturas solicitadas:
-
-```
-![evidencia1](ruta.png)
-![evidencia2](ruta.png)
-![evidencia3](ruta.png)
-```
-
-Incluye evidencias de:
-
-- Creación del certificado autofirmado  
-- Configuración SSL en Apache  
-- NO-IP configurado  
-- Certbot funcionando  
-- Navegador mostrando HTTPS  
-- Renovación automática  
-
----
-
-# ✔ Actividad completada
-

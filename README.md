@@ -14,7 +14,7 @@
 | 2️⃣ | Configuración básica de Apache | Ajustes iniciales y estructura de configuración | [📁 Abrir](./Activity2/README.md) |
 | 5️⃣ | Directiva `Directory` | Control de accesos en directorios | [📁 Abrir](./Activity5/README.md) |
 | 6️⃣ | Expresiones regulares | Uso de regex dentro de Apache | [📁 Abrir](./Activity6/README.md) |
-| 7️⃣ | Reescritura (Rewrite) | Reglas de reescritura con mod_rewrite | [📁 Abrir](./Activity7/README.md) |
+| 7️⃣ | Reescritura | Reglas de reescritura con mod_rewrite | [📁 Abrir](./Activity7/README.md) |
 | 8️⃣ | VirtualHost | Configuración de múltiples sitios con VirtualHost | [📁 Abrir](./Activity8/README.md) |
-| 9️⃣ | AuthenticationURL | Autenticación basada en URL | [📁 Abrir](./Activity9-AuthenticationURL/README.md) |
+| 9️⃣ | Authentication | Autenticación basada en URL | [📁 Abrir](./Activity9-AuthenticationURL/README.md) |
 | 🔟 | SSL | Configuración de HTTPS con SSL/TLS | [📁 Abrir](./Activity10/README.md) |

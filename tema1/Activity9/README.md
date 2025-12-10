@@ -143,18 +143,3 @@ La directiva **Satisfy** combina:
 `![cap5](ruta.png)`
 
 ---
-
-# 📸 Zona de evidencias adicionales
-
-Agrega evidencias de:
-
-- Intentos de acceso denegado
-- Acceso permitido desde diferentes IPs
-- Diferencias entre Satisfy any / all
-
-`![evidencia1](ruta.png)`  
-`![evidencia2](ruta.png)`
-
----
-
-# ✔ Actividad completada

@@ -22,7 +22,7 @@ sudo apt upgrade -y
 ```
 
 ### 📸 *Captura 1: Evidencia del comando `apt update` y `apt upgrade` ejecutándose*
-![Captura1](./recursos/Activity1/apache1.png)
+![Captura1](/recursos/Activity1/apache1.png)
 
 ---
 
@@ -35,7 +35,7 @@ sudo apt install apache2 -y
 ```
 
 ### 📸 *Captura 2: Instalar Apache desde la terminal*
-![Captura2](./recursos/Activity1/apache2.png)
+![Captura2](/recursos/Activity1/apache2.png)
 
 ---
 
@@ -54,7 +54,7 @@ active (running)
 ```
 
 ### 📸 *Captura 3: Evidencia del estado “active (running)”*
-![Captura3](./recursos/Activity1/apache3.png)
+![Captura3](/recursos/Activity1/apache3.png)
 
 ---
 
@@ -75,7 +75,7 @@ http://tu-ip
 Debería aparecer la **página de bienvenida de Apache2**.
 
 ### 📸 *Captura 4: Página de bienvenida de Apache en el navegador*
-![Captura4](./recursos/Activity1/apache4.png)
+![Captura4](/recursos/Activity1/apache4.png)
 
 ---
 
@@ -87,7 +87,7 @@ sudo ufw status
 ```
 
 ### 📸 *Captura 5: Evidencia de regla activada en UFW*
-![Captura5](./recursos/Activity1/apache5.png)
+![Captura5](/recursos/Activity1/apache5.png)
 
 ---
 

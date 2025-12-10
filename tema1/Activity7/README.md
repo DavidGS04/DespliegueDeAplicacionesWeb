@@ -1,4 +1,4 @@
-# 🧩 Activity #7 – Reescritura (mod_rewrite) en Apache  
+# 🧩 Activity #7 – Reescritura
 
 En esta actividad aprenderás a usar el módulo **mod_rewrite** de Apache, uno de los más potentes para manipular URLs, redireccionar, transformar parámetros y mapear rutas limpias hacia scripts internos.
 

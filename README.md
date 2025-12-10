@@ -1,6 +1,5 @@
 # 🌐 Despliegue de Aplicaciones Web
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Apache](https://img.shields.io/badge/Apache-Servidor-red?logo=apache)
 ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow)
 ![Licencia](https://img.shields.io/badge/Licencia-Educativa-green)

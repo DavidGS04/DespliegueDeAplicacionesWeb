@@ -4,8 +4,6 @@
 En esta actividad realizaremos varios cambios en la configuración del servidor **Apache2**, trabajando con puertos, redirecciones, directivas y creación de estructuras de prueba.  
 También se incluye la parte **Activity #2.2**, dedicada a la creación de *scripts* en Bash.
 
-> Documento fuente de la actividad: *Tema_1_Activity#2.pdf* fileciteturn0file0
-
 ---
 
 ## 📌 Objetivos de Activity #2.1

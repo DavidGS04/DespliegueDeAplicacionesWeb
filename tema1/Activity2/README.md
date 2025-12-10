@@ -239,14 +239,3 @@ EOF
 ```
 
 ---
-
-# 📸 Zona de Evidencias
-
-Añade aquí tus capturas:
-
-![evidencia](ruta.png)  
-![evidencia](ruta.png)
-
----
-
-# ✔ Actividad completada

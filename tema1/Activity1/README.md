@@ -74,19 +74,7 @@ http://localhost
 
 ---
 
-# 🔥 Paso 5: Permitir tráfico HTTP (solo si usas UFW)
-
-```bash
-sudo ufw allow 'Apache'
-sudo ufw status
-```
-
-### 📸 *Captura 5: Evidencia de regla activada en UFW*
-![Captura5](/recursos/Activity1/apache5.png)
-
----
-
-# 🛠️ Paso 6: Instalar MySQL Server
+# 🛠️ Paso 5: Instalar MySQL Server
 
 ```bash
 sudo apt install mysql-server
@@ -98,64 +86,24 @@ Comprobar estado:
 sudo systemctl status mysql
 ```
 
-### 📸 *Captura 6: MySQL en ejecución*
-![Captura6](/recursos/Activity1/apache6.png)
-
-Ejecutar script de seguridad:
-
-```bash
-sudo mysql_secure_installation
-```
-
-### 📸 *Captura 7: Proceso mysql_secure_installation*
-![Captura7](/recursos/Activity1/apache7.png)
+### 📸 *Captura 5: MySQL en ejecución*
+![Captura6](/recursos/Activity1/apache5.png)
 
 ---
 
-# 🛠️ Paso 7: Instalar PHP y módulos necesarios
+# 🛠️ Paso 6: Instalar PHP
 
 ```bash
 sudo apt install php libapache2-mod-php php-mysql
 ```
 
+### 📸 *Captura 6: PHP instalado correctamente*
+![Captura8](/recursos/Activity1/apache6.png)
+
 Ver versión:
 
 ```bash
 php -v
-```
-
-### 📸 *Captura 8: PHP instalado correctamente*
-![Captura8](/recursos/Activity1/apache8.png)
-
-Reiniciar Apache:
-
-```bash
-sudo systemctl restart apache2
-```
-
----
-
-# 🧪 Paso 8: Probar PHP en Apache
-
-Crear archivo de prueba:
-
-```bash
-echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
-```
-
-Abrir en navegador:
-
-```
-http://localhost/info.php
-```
-
-### 📸 *Captura 9: Página PHP Info funcionando*
-![Captura9](/recursos/Activity1/apache9.png)
-
-(Después puedes eliminarlo por seguridad)
-
-```bash
-sudo rm /var/www/html/info.php
 ```
 
 ---

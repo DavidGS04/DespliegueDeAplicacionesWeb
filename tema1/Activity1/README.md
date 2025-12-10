@@ -25,7 +25,7 @@ Antes de instalar cualquier software, actualiza el sistema:
 
 ```bash
 sudo apt update
-sudo apt upgrade -y
+sudo apt upgrade
 ```
 
 ### 📸 *Captura 1: Evidencia del comando `apt update` y `apt upgrade` ejecutándose*
@@ -36,7 +36,7 @@ sudo apt upgrade -y
 # 🛠️ Paso 2: Instalar Apache
 
 ```bash
-sudo apt install apache2 -y
+sudo apt install apache2
 ```
 
 ### 📸 *Captura 2: Instalación de Apache desde la terminal*
@@ -89,7 +89,7 @@ sudo ufw status
 # 🛠️ Paso 6: Instalar MySQL Server
 
 ```bash
-sudo apt install mysql-server -y
+sudo apt install mysql-server
 ```
 
 Comprobar estado:
@@ -115,7 +115,7 @@ sudo mysql_secure_installation
 # 🛠️ Paso 7: Instalar PHP y módulos necesarios
 
 ```bash
-sudo apt install php libapache2-mod-php php-mysql -y
+sudo apt install php libapache2-mod-php php-mysql
 ```
 
 Ver versión:

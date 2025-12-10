@@ -27,7 +27,7 @@ sudo apt upgrade -y
 ```
 
 ### 📸 *Captura 1 – Actualización del sistema*
-![cap1](./recursos/Activity1/apache1.png)
+![cap1](/recursos/Activity1/apache1.png)
 
 ---
 
@@ -44,7 +44,7 @@ sudo systemctl status apache2
 ```
 
 ### 📸 *Captura 2 – Apache instalado y activo*
-![cap2](./recursos/Activity1/apache2.png)
+![cap2](/recursos/Activity1/apache2.png)
 
 Probar en navegador:
 
@@ -53,7 +53,7 @@ http://localhost
 ```
 
 ### 📸 *Captura 3 – Página de bienvenida de Apache*
-![cap3](./recursos/Activity1/apache3.png)
+![cap3](/recursos/Activity1/apache3.png)
 
 ---
 
@@ -70,7 +70,7 @@ sudo systemctl status mysql
 ```
 
 ### 📸 *Captura 4 – MySQL funcionando*
-![cap4](./recursos/Activity1/apache4.png)
+![cap4](/recursos/Activity1/apache4.png)
 
 Ejecutar script de seguridad:
 
@@ -79,7 +79,7 @@ sudo mysql_secure_installation
 ```
 
 ### 📸 *Captura 5 – Configuración de seguridad de MySQL*
-![cap5](./recursos/Activity1/apache5.png)
+![cap5](/recursos/Activity1/apache5.png)
 
 ---
 
@@ -96,7 +96,7 @@ php -v
 ```
 
 ### 📸 *Captura 6 – PHP instalado*
-![cap6](./recursos/Activity1/apache6.png)
+![cap6](/recursos/Activity1/apache6.png)
 
 Reiniciar apache:
 
@@ -121,7 +121,7 @@ http://localhost/info.php
 ```
 
 ### 📸 *Captura 7 – Página PHP Info funcionando*
-![cap7](./recursos/Activity1/apache7.png)
+![cap7](/recursos/Activity1/apache7.png)
 
 ---
 
@@ -132,7 +132,7 @@ sudo rm /var/www/html/info.php
 ```
 
 ### 📸 *Captura 8 – Eliminar archivo*
-![cap7](./recursos/Activity1/apache8.png)
+![cap7](/recursos/Activity1/apache8.png)
 
 ---
 

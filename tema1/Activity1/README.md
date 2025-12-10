@@ -1,7 +1,6 @@
 # 🧩 Activity #1 – Instalación de Apache
 
-En esta actividad aprenderás a instalar y comprobar el funcionamiento del servidor web **Apache** en Ubuntu 20.04/22.04.  
-El objetivo es dejar el servidor web funcionando y demostrarlo con capturas de evidencia.
+En esta actividad aprenderás a instalar y comprobar el funcionamiento del servidor web **Apache** en Ubuntu.
 
 ---
 

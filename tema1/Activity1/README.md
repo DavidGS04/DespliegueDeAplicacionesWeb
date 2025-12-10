@@ -96,7 +96,7 @@ sudo systemctl status mysql
 sudo apt install php libapache2-mod-php php-mysql
 ```
 
-### 📸 *Captura: Instalación de Apache desde la terminal*
+### 📸 *Captura: Instalación de PHP desde la terminal*
 ![Captura8](/recursos/Activity1/apache6.png)
 
 Después de instalar PHP, verifica la versión instalada ejecutando:

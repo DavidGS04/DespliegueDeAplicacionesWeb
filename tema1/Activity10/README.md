@@ -44,9 +44,6 @@ sudo systemctl status apache2
 
 # 🛠️ PARTE 1 – Certificado SSL autofirmado (OpenSSL)
 
-Según la práctica:  
-👉 https://josejuansanchez.org/iaw/practica-01-04/index.html
-
 ---
 
 ## 1️⃣ Activar el módulo SSL en Apache
@@ -55,9 +52,6 @@ Según la práctica:
 sudo a2enmod ssl
 sudo systemctl restart apache2
 ```
-
-### 📸 *Captura 1 – Activación del módulo SSL*
-`![cap1](ruta.png)`
 
 ---
 
@@ -71,9 +65,6 @@ sudo openssl req -x509 -nodes -days 365   -newkey rsa:2048   -keyout apache.key 
 ```
 
 Rellena los datos solicitados (CN = dominio o IP pública).
-
-### 📸 *Captura 2 – Generación del certificado*
-`![cap2](ruta.png)`
 
 ---
 
@@ -109,15 +100,9 @@ sudo a2ensite default-ssl.conf
 sudo systemctl reload apache2
 ```
 
-### 📸 *Captura 3 – Navegador mostrando HTTPS con advertencia (autofirmado)*
-`![cap3](ruta.png)`
-
 ---
 
 # 🛠️ PARTE 2 – HTTPS real con Let’s Encrypt + Certbot
-
-Según la práctica:  
-👉 https://josejuansanchez.org/iaw/practica-https/index.html
 
 ---
 
@@ -129,9 +114,6 @@ Según la práctica:
    tunombre.ddns.net
    ```
 3. Apuntar el dominio a la **IP pública** de tu EC2
-
-### 📸 *Captura 4 – Host NO-IP configurado*
-`![cap4](ruta.png)`
 
 ---
 
@@ -159,9 +141,6 @@ Certbot instalará automáticamente:
 - Redirección HTTPS  
 - Nuevos VirtualHost seguros  
 
-### 📸 *Captura 5 – Certbot completando instalación*
-`![cap5](ruta.png)`
-
 ---
 
 # 🧪 Comprobaciones finales
@@ -173,9 +152,6 @@ https://tunombre.ddns.net
 ```
 
 Debe mostrar el **candado verde** 🔒 en el navegador.
-
-### 📸 *Captura 6 – Navegador mostrando HTTPS válido*
-`![cap6](ruta.png)`
 
 ---
 

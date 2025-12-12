@@ -1,4 +1,4 @@
-# 📁 Ejercicio 6: Práctica Servidor Web (1º Trimestre)
+# 🖧 🖥 Servidores Web: Proyecto 1º Trimestre
 
 Guía **paso a paso en Ubuntu** para desplegar un servidor web interno de un instituto utilizando **Apache**, **WordPress**, una **aplicación Python con mod_wsgi**, **AWStats** para estadísticas y un **segundo servidor Nginx** en el puerto **8080** con **PHP y phpMyAdmin**.
 
@@ -464,15 +464,3 @@ sudo tail -f /var/log/nginx/*.log
 ```
 
 ---
-
-## 📦 Entrega en GitHub
-
-- README.md completo
-- Carpeta `images/` con todas las capturas
-- Ficheros de configuración relevantes
-- Enlace al repositorio del módulo
-- Fecha límite: **28 de noviembre**
-
----
-
-## ✅ Práctica completada

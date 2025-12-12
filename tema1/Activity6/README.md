@@ -22,11 +22,6 @@ Se recomienda leer antes:
 🔗 https://regexr.com  
 🔗 http://iie.fing.edu.uy/~vagonbar/unixbas/expreg.htm  
 
-Además, debes realizar los ejercicios de la web:  
-👉 http://regexone.com
-
-(Coloca evidencias aquí si tu profesor las pide)
-
 ---
 
 # 🧩 Ejercicios y soluciones
@@ -40,9 +35,6 @@ A continuación están las expresiones regulares solicitadas en la práctica.
 ```
 ^\/www\/(.+\/)?[0-9]{3}$
 ```
-
-### 📸 *Captura 1 (opcional)*
-`![cap1](ruta.png)`
 
 ---
 
@@ -61,9 +53,6 @@ Directiva Apache:
 ```
 RedirectMatch "(.+)\.gif$" "http://other.example.com/$1.jpg"
 ```
-
-### 📸 *Captura 2 – Configuración en Apache (opcional)*
-`![cap2](ruta.png)`
 
 ---
 

@@ -75,7 +75,7 @@ ping -c 1 servidor2.centro.intranet
 sudo apt -y install apache2 apache2-utils
 ```
 
-📸 *Captura*
+📸 *Captura*.
 ![Captura1](/recursos/5.png)
 
 ### Crear carpetas para los sitios
@@ -471,3 +471,4 @@ http://servidor2.centro.intranet:8080/phpmyadmin
   ![Captura1](/recursos/54.png)
 
 ---
+

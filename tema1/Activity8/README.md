@@ -38,9 +38,6 @@ echo "<h1>Bienvenido a Site1</h1>" > /var/www/site1.com/public_html/index.html
 echo "<h1>Bienvenido a Site2</h1>" > /var/www/site2.com/public_html/index.html
 ```
 
-### 📸 *Captura 1 – Estructura de carpetas creada*
-![cap1](ruta.png)
-
 ---
 
 # 🛠️ Paso 2: Crear archivos de VirtualHost
@@ -69,9 +66,6 @@ Repetir para **site2.com**:
 sudo nano /etc/apache2/sites-available/site2.com.conf
 ```
 
-### 📸 *Captura 2 – Archivos .conf creados*
-![cap2](ruta.png)
-
 ---
 
 # 🛠️ Paso 3: Activar los VirtualHost
@@ -88,9 +82,6 @@ Desactivar el sitio por defecto (opcional):
 sudo a2dissite 000-default.conf
 sudo systemctl reload apache2
 ```
-
-### 📸 *Captura 3 – Activando sitios*
-![cap3](ruta.png)
 
 ---
 
@@ -109,9 +100,6 @@ Añadir:
 127.0.0.1   site2.com
 ```
 
-### 📸 *Captura 4 – Edición de /etc/hosts*
-![cap4](ruta.png)
-
 ---
 
 # 🧪 Paso 5: Probar los sitios en el navegador
@@ -124,9 +112,6 @@ http://site2.com
 ```
 
 Cada uno debe mostrar su página correspondiente.
-
-### 📸 *Captura 5 – Funcionamiento en el navegador*
-![cap5](ruta.png)
 
 ---
 
@@ -145,12 +130,3 @@ Asignar ese IP a un VirtualHost:
 ```
 
 ---
-
-# 📸 Zona de Evidencias
-
-`![evidencia1](ruta.png)`  
-`![evidencia2](ruta.png)`  
-
----
-
-# ✔ Actividad completada

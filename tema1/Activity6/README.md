@@ -1,6 +1,6 @@
 # 🧩 Activity #6 – Expresiones Regulares
 
-En esta actividad aprenderás a trabajar con **expresiones regulares (regex)** aplicadas a configuraciones de Apache y validaciones en general.  
+En esta actividad aprenderás a trabajar con **expresiones regulares** aplicadas a configuraciones de Apache y validaciones en general.  
 Estas regex permiten filtrar, validar, redirigir y manipular patrones dentro de URLs, rutas o cadenas.
 
 ---

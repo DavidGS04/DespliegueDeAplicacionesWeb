@@ -26,9 +26,6 @@ sudo htpasswd /etc/apache2/.htpasswd usuario4
 sudo htpasswd /etc/apache2/.htpasswd usuario5
 ```
 
-### 📸 *Captura 1 – Creación de usuarios*
-`![cap1](ruta.png)`
-
 ---
 
 # 🛠️ Paso 2: Crear grupos de usuarios
@@ -48,9 +45,6 @@ Contenido:
 grupo1: usuario1 usuario2
 grupo2: usuario3 usuario4 usuario5
 ```
-
-### 📸 *Captura 2 – Archivo de grupos*
-`![cap2](ruta.png)`
 
 ---
 
@@ -74,9 +68,6 @@ Configurar autenticación en Apache:
 
 Esto permite el acceso a **todos los usuarios válidos**.
 
-### 📸 *Captura 3 – Configuración privado1*
-`![cap3](ruta.png)`
-
 ---
 
 # 🛠️ Paso 4: Crear directorio privado2 (acceso solo grupo1)
@@ -99,9 +90,6 @@ Configurar autenticación:
 ```
 
 Solo **usuario1 y usuario2** podrán acceder.
-
-### 📸 *Captura 4 – Configuración privado2*
-`![cap4](ruta.png)`
 
 ---
 
@@ -138,8 +126,5 @@ La directiva **Satisfy** combina:
 ✔ Accede cualquiera desde localhost sin pedir contraseña  
 ✔ Acceden usuario1/usuario2 desde cualquier IP  
 ✖ Usuarios del grupo2 son rechazados siempre
-
-### 📸 *Captura 5 – Probando diferencias entre any / all*
-`![cap5](ruta.png)`
 
 ---

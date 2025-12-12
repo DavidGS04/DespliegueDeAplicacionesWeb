@@ -44,8 +44,6 @@ sudo systemctl status apache2
 
 # 🛠️ PARTE 1 – Certificado SSL autofirmado (OpenSSL)
 
----
-
 ## 1️⃣ Activar el módulo SSL en Apache
 
 ```bash
@@ -103,8 +101,6 @@ sudo systemctl reload apache2
 ---
 
 # 🛠️ PARTE 2 – HTTPS real con Let’s Encrypt + Certbot
-
----
 
 ## 4️⃣ Crear un dominio dinámico en NO-IP
 

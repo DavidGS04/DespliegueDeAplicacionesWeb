@@ -44,4 +44,4 @@ tareas-despliegue-aplicaciones-web/
 
 | Nº | Proyecto | Descripción | Enlace |
 |----|----------|-------------|--------|
-| 🔟 | Servidores web | Trabajo 1º trimestre | [📁 Abrir](./proyecto-1er-trimestre/README.md) |
+| 1️⃣ | Servidores web | Trabajo 1º trimestre | [📁 Abrir](./proyecto-1er-trimestre/README.md) |

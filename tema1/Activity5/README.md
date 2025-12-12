@@ -28,7 +28,7 @@ echo "<h1>DIR 2</h1>" | sudo tee /var/www/html/dir2/index.html
 
 ---
 
-# 🧠 Paso 2: Diferencia entre configuraciones antiguas y nuevas (Require)
+# 🧠 Paso 2: Diferencia entre configuraciones antiguas y nuevas
 
 Ejemplo antiguo:
 

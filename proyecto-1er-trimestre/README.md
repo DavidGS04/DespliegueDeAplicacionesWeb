@@ -8,7 +8,7 @@ El repositorio documenta **todos los comandos, configuraciones y comprobaciones*
 
 ## 🧭 Entorno y herramientas a utilizar
 
-- Sistema operativo: Ubuntu Desktop 22.04
+- Sistema operativo: **Ubuntu Desktop 22.04**
 - Usuario con privilegios `sudo`
 - Navegador web: Firefox
 - Dominios internos configurados mediante `/etc/hosts`:
@@ -27,7 +27,7 @@ sudo apt update && sudo apt -y upgrade
 sudo apt -y install curl wget unzip git
 ```
 
-📸 *Captura sugerida*: actualización del sistema finalizada correctamente.
+📸 *Captura sugerida*: sistema actualizado correctamente.
 
 ---
 
@@ -57,7 +57,7 @@ ping -c 1 departamentos.centro.intranet
 ping -c 1 servidor2.centro.intranet
 ```
 
-📸 *Captura sugerida*: pings respondiendo correctamente.
+📸 *Captura sugerida*: pings funcionando correctamente.
 
 ---
 
@@ -89,7 +89,7 @@ sudo chmod -R 755 /var/www
 sudo systemctl status apache2 --no-pager
 ```
 
-📸 *Captura sugerida*: Apache activo y en ejecución.
+📸 *Captura sugerida*: Apache activo.
 
 ---
 
@@ -119,7 +119,7 @@ Reiniciar Apache:
 sudo systemctl restart apache2
 ```
 
-📸 *Captura sugerida*: instalación correcta de PHP/MySQL.
+📸 *Captura sugerida*: PHP y MySQL instalados.
 
 ---
 
@@ -151,11 +151,10 @@ Contenido:
 
 ---
 
-## 4.2️⃣ Activar mod_wsgi (REQUERIDO para aplicaciones Python)
+## 4.2️⃣ Activar mod_wsgi (PASO OBLIGATORIO)
 
 ⚠️ **Este paso debe realizarse ANTES de crear el VirtualHost de Python**,  
-ya que Apache necesita cargar el módulo WSGI para reconocer las directivas
-`WSGIDaemonProcess`, `WSGIProcessGroup` y `WSGIScriptAlias`.
+ya que Apache necesita cargar el módulo para reconocer las directivas WSGI.
 
 ```bash
 sudo apt -y install libapache2-mod-wsgi-py3 python3-venv
@@ -205,39 +204,253 @@ sudo apache2ctl configtest
 sudo systemctl reload apache2
 ```
 
-📸 *Captura sugerida*: sitios habilitados correctamente.
+📸 *Captura sugerida*: VirtualHosts habilitados sin errores.
 
 ---
 
 ## 5️⃣ Instalación y configuración de WordPress
-*(sin cambios respecto a tu versión)*
+
+### 5.1 Crear base de datos y usuario
+
+```bash
+sudo mysql
+```
+
+```sql
+CREATE DATABASE wordpress CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'wp_password_seguro';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+---
+
+### 5.2 Descargar y copiar WordPress
+
+```bash
+cd /tmp
+wget https://wordpress.org/latest.zip
+unzip latest.zip
+sudo rsync -avP wordpress/ /var/www/centro.intranet/
+```
+
+---
+
+### 5.3 Configurar `wp-config.php`
+
+```bash
+cd /var/www/centro.intranet
+sudo cp wp-config-sample.php wp-config.php
+sudo nano wp-config.php
+```
+
+Modificar:
+
+```php
+define( 'DB_NAME', 'wordpress' );
+define( 'DB_USER', 'wpuser' );
+define( 'DB_PASSWORD', 'wp_password_seguro' );
+define( 'DB_HOST', 'localhost' );
+```
+
+Permisos:
+
+```bash
+sudo chown -R www-data:www-data /var/www/centro.intranet
+sudo find /var/www/centro.intranet -type d -exec chmod 755 {} \;
+sudo find /var/www/centro.intranet -type f -exec chmod 644 {} \;
+```
+
+Acceso:
+
+```
+http://centro.intranet
+```
+
+📸 *Captura sugerida*: instalador de WordPress.
 
 ---
 
 ## 6️⃣ Aplicación Python con mod_wsgi
-*(sin cambios respecto a tu versión)*
+
+### 6.1 Aplicación Python mínima
+
+```bash
+sudo nano /var/www/departamentos.centro.intranet/app.py
+```
+
+```python
+def application(environ, start_response):
+    status = '200 OK'
+    headers = [('Content-Type', 'text/html; charset=utf-8')]
+    start_response(status, headers)
+    return [b"<h1>Aplicación Python OK</h1>"]
+```
+
+```bash
+sudo nano /var/www/departamentos.centro.intranet/wsgi.py
+```
+
+```python
+import sys
+sys.path.insert(0, '/var/www/departamentos.centro.intranet')
+from app import application
+```
+
+```bash
+sudo chown -R www-data:www-data /var/www/departamentos.centro.intranet
+sudo systemctl restart apache2
+```
+
+Acceso:
+
+```
+http://departamentos.centro.intranet
+```
+
+📸 *Captura sugerida*: aplicación Python funcionando.
+
+---
+
+### 6.2 Protección con autenticación básica
+
+```bash
+sudo apt -y install apache2-utils
+sudo htpasswd -c /etc/apache2/.htpasswd profesor
+```
+
+Editar VirtualHost:
+
+```
+<Directory /var/www/departamentos.centro.intranet>
+    AuthType Basic
+    AuthName "Acceso restringido"
+    AuthUserFile /etc/apache2/.htpasswd
+    Require valid-user
+</Directory>
+```
+
+```bash
+sudo systemctl reload apache2
+```
+
+📸 *Captura sugerida*: ventana de autenticación.
 
 ---
 
 ## 7️⃣ Instalación y configuración de AWStats
-*(sin cambios respecto a tu versión)*
+
+```bash
+sudo apt -y install awstats
+sudo a2enmod cgi
+sudo a2enconf awstats
+sudo systemctl reload apache2
+```
+
+Configuración:
+
+```bash
+sudo cp /etc/awstats/awstats.conf /etc/awstats/awstats.centro.intranet.conf
+sudo nano /etc/awstats/awstats.centro.intranet.conf
+```
+
+Valores clave:
+
+```
+LogFile="/var/log/apache2/centro_access.log"
+SiteDomain="centro.intranet"
+HostAliases="localhost 127.0.0.1 www.centro.intranet"
+```
+
+Actualizar estadísticas:
+
+```bash
+sudo /usr/lib/cgi-bin/awstats.pl -config=centro.intranet -update
+```
+
+Acceso:
+
+```
+http://centro.intranet/awstats/awstats.pl?config=centro.intranet
+```
+
+📸 *Captura sugerida*: panel AWStats.
 
 ---
 
 ## 8️⃣ Segundo servidor: Nginx en puerto 8080
-*(sin cambios respecto a tu versión)*
+
+### Instalación
+
+```bash
+sudo apt -y install nginx php-fpm php-mysql
+```
+
+### Crear DocumentRoot
+
+```bash
+sudo mkdir -p /var/www/servidor2.centro.intranet
+echo "<?php phpinfo();" | sudo tee /var/www/servidor2.centro.intranet/info.php
+sudo chown -R www-data:www-data /var/www/servidor2.centro.intranet
+```
+
+### Configurar servidor Nginx
+
+```bash
+sudo nano /etc/nginx/sites-available/servidor2.centro.intranet
+```
+
+```
+server {
+    listen 8080;
+    server_name servidor2.centro.intranet;
+    root /var/www/servidor2.centro.intranet;
+    index index.php index.html;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+    }
+}
+```
+
+```bash
+sudo ln -s /etc/nginx/sites-available/servidor2.centro.intranet /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+Acceso:
+
+```
+http://servidor2.centro.intranet:8080/info.php
+```
 
 ---
 
 ## 9️⃣ phpMyAdmin en Nginx
-*(sin cambios respecto a tu versión)*
+
+```bash
+sudo apt -y install phpmyadmin
+sudo ln -s /usr/share/phpmyadmin /var/www/servidor2.centro.intranet/phpmyadmin
+sudo systemctl reload nginx
+```
+
+Acceso:
+
+```
+http://servidor2.centro.intranet:8080/phpmyadmin
+```
+
+📸 *Captura sugerida*: phpMyAdmin funcionando.
 
 ---
 
 ## 🔟 Comprobaciones finales
 
 - WordPress: `http://centro.intranet`
-- Python + Auth: `http://departamentos.centro.intranet`
+- Python + autenticación: `http://departamentos.centro.intranet`
 - AWStats: `http://centro.intranet/awstats/`
 - Nginx + PHP: `http://servidor2.centro.intranet:8080`
 
@@ -250,3 +463,5 @@ sudo tail -f /var/log/nginx/*.log
 ```
 
 ---
+
+## ✅ Práctica finalizada

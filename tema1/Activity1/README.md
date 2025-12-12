@@ -28,7 +28,7 @@ sudo apt upgrade
 ```
 
 ### 📸 *Captura: Evidencia del comando `apt update` y `apt upgrade` ejecutándose*
-![Captura1](/recursos/Activity1/apache1.png)
+![Captura1](/recursos/apache1.png)
 
 ---
 
@@ -39,7 +39,7 @@ sudo apt install apache2
 ```
 
 ### 📸 *Captura: Instalación de Apache desde la terminal*
-![Captura2](/recursos/Activity1/apache2.png)
+![Captura2](/recursos/apache2.png)
 
 ---
 
@@ -56,7 +56,7 @@ active (running)
 ```
 
 ### 📸 *Captura: Evidencia del estado “active (running)”*
-![Captura3](/recursos/Activity1/apache3.png)
+![Captura3](/recursos/apache3.png)
 
 ---
 
@@ -69,7 +69,7 @@ http://localhost
 ```
 
 ### 📸 *Captura: Página de bienvenida de Apache en el navegador*
-![Captura4](/recursos/Activity1/apache4.png)
+![Captura4](/recursos/apache4.png)
 
 ---
 
@@ -86,7 +86,7 @@ sudo systemctl status mysql
 ```
 
 ### 📸 *Captura: MySQL en ejecución*
-![Captura6](/recursos/Activity1/apache5.png)
+![Captura6](/recursos/apache5.png)
 
 ---
 
@@ -97,7 +97,7 @@ sudo apt install php libapache2-mod-php php-mysql
 ```
 
 ### 📸 *Captura: Instalación de PHP desde la terminal*
-![Captura8](/recursos/Activity1/apache6.png)
+![Captura8](/recursos/apache6.png)
 
 Después de instalar PHP, verifica la versión instalada ejecutando:
 
@@ -106,6 +106,6 @@ php -v
 ```
 
 ### 📸 *Captura: PHP instalado correctamente*
-![Captura6](/recursos/Activity1/apache7.png)
+![Captura6](/recursos/apache7.png)
 
 ---

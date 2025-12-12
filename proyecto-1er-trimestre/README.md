@@ -27,7 +27,9 @@ sudo apt update && sudo apt -y upgrade
 sudo apt -y install curl wget unzip git
 ```
 
-📸 *Captura sugerida*: sistema actualizado correctamente.
+📸 *Captura*: sistema actualizado correctamente.
+![Captura1](/recursos/1.png)
+![Captura1](/recursos/2.png)
 
 ---
 
@@ -47,6 +49,9 @@ Añadir al final:
 127.0.0.1   servidor2.centro.intranet
 ```
 
+📸 *Captura*: archivo /etc/hosts.
+![Captura1](/recursos/3.png)
+
 Guardar con `CTRL + O` y salir con `CTRL + X`.
 
 ### Comprobación
@@ -57,7 +62,8 @@ ping -c 1 departamentos.centro.intranet
 ping -c 1 servidor2.centro.intranet
 ```
 
-📸 *Captura sugerida*: pings funcionando correctamente.
+📸 *Captura*: pings funcionando correctamente.
+![Captura1](/recursos/4.png)
 
 ---
 
@@ -68,6 +74,9 @@ ping -c 1 servidor2.centro.intranet
 ```bash
 sudo apt -y install apache2 apache2-utils
 ```
+
+📸 *Captura*
+![Captura1](/recursos/5.png)
 
 ### Crear carpetas para los sitios
 
@@ -443,23 +452,22 @@ Acceso:
 http://servidor2.centro.intranet:8080/phpmyadmin
 ```
 
-📸 *Captura sugerida*: phpMyAdmin funcionando.
+📸 *Captura*: phpMyAdmin funcionando.
+![Captura1](/recursos/54.png)
 
 ---
 
 ## 🔟 Comprobaciones finales
 
 - WordPress: `http://centro.intranet`
+  ![Captura1](/recursos/55.png)
 - Python + autenticación: `http://departamentos.centro.intranet`
-- AWStats: `http://centro.intranet/awstats/`
-- Nginx + PHP: `http://servidor2.centro.intranet:8080`
-
-Comandos útiles:
-
-```bash
-sudo systemctl status apache2 nginx mysql
-sudo tail -f /var/log/apache2/*.log
-sudo tail -f /var/log/nginx/*.log
-```
+  ![Captura1](/recursos/55.png)
+- AWStats: `http://centro.intranet/awstats/awstats.pl?config=centro.intranet`
+  ![Captura1](/recursos/55.png)
+- Nginx + PHP: `http://servidor2.centro.intranet:8080/info.php`
+  ![Captura1](/recursos/55.png)
+- phpMyAdmin en Nginx: `http://servidor2.centro.intranet:8080/phpmyadmin/`
+  ![Captura1](/recursos/54.png)
 
 ---

@@ -27,9 +27,8 @@ sudo apt update && sudo apt -y upgrade
 sudo apt -y install curl wget unzip git
 ```
 
-📸 *Captura*: sistema actualizado correctamente.
-![Captura1](/recursos/1.png)
-![Captura1](/recursos/2.png)
+![Captura](/recursos/1.png)
+![Captura](/recursos/2.png)
 
 ---
 
@@ -49,8 +48,7 @@ Añadir al final:
 127.0.0.1   servidor2.centro.intranet
 ```
 
-📸 *Captura*: archivo /etc/hosts.
-![Captura1](/recursos/3.png)
+![Captura](/recursos/3.png)
 
 Guardar con `CTRL + O` y salir con `CTRL + X`.
 
@@ -62,8 +60,7 @@ ping -c 1 departamentos.centro.intranet
 ping -c 1 servidor2.centro.intranet
 ```
 
-📸 *Captura*: pings funcionando correctamente.
-![Captura1](/recursos/4.png)
+![Captura](/recursos/4.png)
 
 ---
 
@@ -75,8 +72,7 @@ ping -c 1 servidor2.centro.intranet
 sudo apt -y install apache2 apache2-utils
 ```
 
-📸 *Captura*.
-![Captura1](/recursos/5.png)
+![Captura](/recursos/5.png)
 
 ### Crear carpetas para los sitios
 
@@ -85,6 +81,8 @@ sudo mkdir -p /var/www/centro.intranet
 sudo mkdir -p /var/www/departamentos.centro.intranet
 ```
 
+![Captura](/recursos/6.png)
+
 ### Permisos correctos
 
 ```bash
@@ -92,13 +90,15 @@ sudo chown -R www-data:www-data /var/www/centro.intranet /var/www/departamentos.
 sudo chmod -R 755 /var/www
 ```
 
+![Captura](/recursos/7.png)
+
 ### Verificación del servicio
 
 ```bash
 sudo systemctl status apache2 --no-pager
 ```
 
-📸 *Captura sugerida*: Apache activo.
+![Captura](/recursos/8.png)
 
 ---
 
@@ -110,11 +110,15 @@ sudo systemctl status apache2 --no-pager
 sudo apt -y install libapache2-mod-php php php-mysql php-cli php-curl php-xml php-gd
 ```
 
+![Captura](/recursos/9.png)
+
 ### Instalar MySQL
 
 ```bash
 sudo apt -y install mysql-server
 ```
+
+![Captura](/recursos/10.png)
 
 ### Configuración básica de seguridad
 
@@ -122,13 +126,15 @@ sudo apt -y install mysql-server
 sudo mysql_secure_installation
 ```
 
+![Captura](/recursos/11.png)
+
 Reiniciar Apache:
 
 ```bash
 sudo systemctl restart apache2
 ```
 
-📸 *Captura sugerida*: PHP y MySQL instalados.
+![Captura](/recursos/12.png)
 
 ---
 
@@ -139,6 +145,8 @@ sudo systemctl restart apache2
 ```bash
 sudo nano /etc/apache2/sites-available/centro.intranet.conf
 ```
+
+![Captura](/recursos/13.png)
 
 Contenido:
 
@@ -157,6 +165,8 @@ Contenido:
     CustomLog ${APACHE_LOG_DIR}/centro_access.log combined
 </VirtualHost>
 ```
+
+![Captura](/recursos/14.png)
 
 ---
 
@@ -177,6 +187,9 @@ Comprobación opcional:
 apache2ctl -M | grep wsgi
 ```
 
+![Captura](/recursos/15.png)
+![Captura](/recursos/16.png)
+
 ---
 
 ### 4.3 VirtualHost para `departamentos.centro.intranet` (Python + WSGI)
@@ -184,6 +197,8 @@ apache2ctl -M | grep wsgi
 ```bash
 sudo nano /etc/apache2/sites-available/departamentos.centro.intranet.conf
 ```
+
+![Captura](/recursos/17.png)
 
 Contenido:
 
@@ -204,6 +219,8 @@ Contenido:
 </VirtualHost>
 ```
 
+![Captura](/recursos/18.png)
+
 ### Habilitar sitios y módulos
 
 ```bash
@@ -212,8 +229,6 @@ sudo a2enmod rewrite
 sudo apache2ctl configtest
 sudo systemctl reload apache2
 ```
-
-📸 *Captura sugerida*: VirtualHosts habilitados sin errores.
 
 ---
 
@@ -233,6 +248,8 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
+![Captura](/recursos/19.png)
+
 ---
 
 ### 5.2 Descargar y copiar WordPress
@@ -244,6 +261,9 @@ unzip latest.zip
 sudo rsync -avP wordpress/ /var/www/centro.intranet/
 ```
 
+![Captura](/recursos/20.png)
+![Captura](/recursos/21.png)
+
 ---
 
 ### 5.3 Configurar `wp-config.php`
@@ -254,6 +274,8 @@ sudo cp wp-config-sample.php wp-config.php
 sudo nano wp-config.php
 ```
 
+![Captura](/recursos/22.png)
+
 Modificar:
 
 ```php
@@ -263,6 +285,8 @@ define( 'DB_PASSWORD', 'wp_password_seguro' );
 define( 'DB_HOST', 'localhost' );
 ```
 
+![Captura](/recursos/23.png)
+
 Permisos:
 
 ```bash
@@ -271,13 +295,17 @@ sudo find /var/www/centro.intranet -type d -exec chmod 755 {} \;
 sudo find /var/www/centro.intranet -type f -exec chmod 644 {} \;
 ```
 
+![Captura](/recursos/24.png)
+
 Acceso:
 
 ```
 http://centro.intranet
 ```
 
-📸 *Captura sugerida*: instalador de WordPress.
+![Captura](/recursos/25.png)
+![Captura](/recursos/26.png)
+![Captura](/recursos/27.png)
 
 ---
 
@@ -289,6 +317,8 @@ http://centro.intranet
 sudo nano /var/www/departamentos.centro.intranet/app.py
 ```
 
+![Captura](/recursos/28.png)
+
 ```python
 def application(environ, start_response):
     status = '200 OK'
@@ -297,9 +327,13 @@ def application(environ, start_response):
     return [b"<h1>Aplicación Python OK</h1>"]
 ```
 
+![Captura](/recursos/29.png)
+
 ```bash
 sudo nano /var/www/departamentos.centro.intranet/wsgi.py
 ```
+
+![Captura](/recursos/30.png)
 
 ```python
 import sys
@@ -307,10 +341,14 @@ sys.path.insert(0, '/var/www/departamentos.centro.intranet')
 from app import application
 ```
 
+![Captura](/recursos/31.png)
+
 ```bash
 sudo chown -R www-data:www-data /var/www/departamentos.centro.intranet
 sudo systemctl restart apache2
 ```
+
+![Captura](/recursos/32.png)
 
 Acceso:
 
@@ -318,7 +356,7 @@ Acceso:
 http://departamentos.centro.intranet
 ```
 
-📸 *Captura sugerida*: aplicación Python funcionando.
+![Captura](/recursos/33.png)
 
 ---
 
@@ -328,6 +366,8 @@ http://departamentos.centro.intranet
 sudo apt -y install apache2-utils
 sudo htpasswd -c /etc/apache2/.htpasswd profesor
 ```
+
+![Captura](/recursos/34.png)
 
 Editar VirtualHost:
 
@@ -340,11 +380,13 @@ Editar VirtualHost:
 </Directory>
 ```
 
+![Captura](/recursos/35.png)
+
 ```bash
 sudo systemctl reload apache2
 ```
 
-📸 *Captura sugerida*: ventana de autenticación.
+![Captura](/recursos/36.png)
 
 ---
 
@@ -353,16 +395,24 @@ sudo systemctl reload apache2
 ```bash
 sudo apt -y install awstats
 sudo a2enmod cgi
+sudo systemctl restart apache2
+sudo nano /etc/apache2/conf-available/awstats.conf
 sudo a2enconf awstats
 sudo systemctl reload apache2
 ```
 
+![Captura](/recursos/37.png)
+![Captura](/recursos/38.png)
+![Captura](/recursos/39.png)
+![Captura](/recursos/40.png)
 Configuración:
 
 ```bash
 sudo cp /etc/awstats/awstats.conf /etc/awstats/awstats.centro.intranet.conf
 sudo nano /etc/awstats/awstats.centro.intranet.conf
 ```
+
+![Captura](/recursos/41.png)
 
 Valores clave:
 
@@ -372,11 +422,17 @@ SiteDomain="centro.intranet"
 HostAliases="localhost 127.0.0.1 www.centro.intranet"
 ```
 
+![Captura](/recursos/42.png)
+![Captura](/recursos/43.png)
+![Captura](/recursos/44.png)
+
 Actualizar estadísticas:
 
 ```bash
 sudo /usr/lib/cgi-bin/awstats.pl -config=centro.intranet -update
 ```
+
+![Captura](/recursos/45.png)
 
 Acceso:
 
@@ -384,7 +440,7 @@ Acceso:
 http://centro.intranet/awstats/awstats.pl?config=centro.intranet
 ```
 
-📸 *Captura sugerida*: panel AWStats.
+![Captura](/recursos/46.png)
 
 ---
 
@@ -396,6 +452,8 @@ http://centro.intranet/awstats/awstats.pl?config=centro.intranet
 sudo apt -y install nginx php-fpm php-mysql
 ```
 
+![Captura](/recursos/47.png)
+
 ### Crear DocumentRoot
 
 ```bash
@@ -403,6 +461,8 @@ sudo mkdir -p /var/www/servidor2.centro.intranet
 echo "<?php phpinfo();" | sudo tee /var/www/servidor2.centro.intranet/info.php
 sudo chown -R www-data:www-data /var/www/servidor2.centro.intranet
 ```
+
+![Captura](/recursos/48.png)
 
 ### Configurar servidor Nginx
 
@@ -424,17 +484,30 @@ server {
 }
 ```
 
+![Captura](/recursos/49.png)
+
+Primero eliminamos el archivo por defecto para que no haya conflictos con el puerto 8080.
+```bash
+sudo rm /etc/nginx/sites-enabled/default
+```
+![Captura](/recursos/50.png)
+
 ```bash
 sudo ln -s /etc/nginx/sites-available/servidor2.centro.intranet /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
+sudo systemctl status nginx
 ```
+
+![Captura](/recursos/51.png)
 
 Acceso:
 
 ```
 http://servidor2.centro.intranet:8080/info.php
 ```
+
+![Captura](/recursos/52.png)
 
 ---
 
@@ -446,13 +519,14 @@ sudo ln -s /usr/share/phpmyadmin /var/www/servidor2.centro.intranet/phpmyadmin
 sudo systemctl reload nginx
 ```
 
+![Captura](/recursos/53.png)
+
 Acceso:
 
 ```
 http://servidor2.centro.intranet:8080/phpmyadmin
 ```
 
-📸 *Captura*: phpMyAdmin funcionando.
 ![Captura1](/recursos/54.png)
 
 ---
@@ -462,13 +536,12 @@ http://servidor2.centro.intranet:8080/phpmyadmin
 - WordPress: `http://centro.intranet`
   ![Captura1](/recursos/55.png)
 - Python + autenticación: `http://departamentos.centro.intranet`
-  ![Captura1](/recursos/55.png)
+  ![Captura1](/recursos/36.png)
 - AWStats: `http://centro.intranet/awstats/awstats.pl?config=centro.intranet`
-  ![Captura1](/recursos/55.png)
+  ![Captura1](/recursos/46.png)
 - Nginx + PHP: `http://servidor2.centro.intranet:8080/info.php`
-  ![Captura1](/recursos/55.png)
+  ![Captura1](/recursos/52.png)
 - phpMyAdmin en Nginx: `http://servidor2.centro.intranet:8080/phpmyadmin/`
   ![Captura1](/recursos/54.png)
 
 ---
-

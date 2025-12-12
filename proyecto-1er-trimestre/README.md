@@ -6,26 +6,15 @@ El repositorio documenta **todos los comandos, configuraciones y comprobaciones*
 
 ---
 
-## 🧭 Entorno y requisitos
+## 🧭 Entorno y herramientas a utilizar
 
-- Sistema operativo: Ubuntu Server/Desktop (22.04 o 24.04 recomendado)
+- Sistema operativo: Ubuntu Desktop 22.04
 - Usuario con privilegios `sudo`
-- Navegador web (Firefox / Chrome)
+- Navegador web: Firefox
 - Dominios internos configurados mediante `/etc/hosts`:
   - `centro.intranet`
   - `departamentos.centro.intranet`
   - `servidor2.centro.intranet`
-
-### 📂 Estructura del repositorio
-
-```
-.
-├── README.md
-├── images/
-│   └── capturas del proceso
-└── docs/
-    └── documentación adicional (opcional)
-```
 
 ---
 
@@ -464,3 +453,4 @@ sudo tail -f /var/log/nginx/*.log
 ```
 
 ---
+

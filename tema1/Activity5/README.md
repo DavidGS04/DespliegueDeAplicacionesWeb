@@ -26,9 +26,6 @@ echo "<h1>DIR 1</h1>" | sudo tee /var/www/html/dir1/index.html
 echo "<h1>DIR 2</h1>" | sudo tee /var/www/html/dir2/index.html
 ```
 
-### 📸 *Captura 1: directorios creados*
-![captura1](ruta.png)
-
 ---
 
 # 🧠 Paso 2: Diferencia entre configuraciones antiguas y nuevas (Require)
@@ -52,9 +49,6 @@ Require ip 192.168.1.100
 | Denegar a todos | `Deny from all` | `Require all denied` |
 | Permitir IP | `Allow from 192.168.1.100` | `Require ip 192.168.1.100` |
 | Orden | `Order Allow,Deny` | *No necesario en Apache 2.4* |
-
-### 📸 *Captura 2: documento de ejemplo o configuración comparada*
-![captura2](ruta.png)
 
 ---
 
@@ -93,9 +87,6 @@ Máscara → rango equivalente: `10.3.0.0/16`
 Require ip 10.3.0.0/16
 ```
 
-### 📸 *Captura 3: configuración aplicada en Apache*
-![captura3](ruta.png)
-
 ---
 
 # 🛠️ Paso 4: Modificar acceso a dir1
@@ -109,9 +100,6 @@ Require ip 10.3.0.0/16
     Require not ip 10.3.0.101
 </Directory>
 ```
-
-### 📸 *Captura 4*
-![captura4](ruta.png)
 
 ---
 
@@ -128,8 +116,5 @@ Require ip 10.3.0.0/16
     Require not host marisma.intranet
 </Directory>
 ```
-
-### 📸 *Captura 5*
-![captura5](ruta.png)
 
 ---

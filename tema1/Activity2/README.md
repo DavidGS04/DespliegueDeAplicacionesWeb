@@ -20,9 +20,6 @@ Añadimos:
 Listen 81
 ```
 
-### 📸 *Captura 1: Evidencia mostrando el puerto añadido*
-![captura1](ruta.png)
-
 ---
 
 ### 2️⃣ Añadir dominio “marisma.intranet” al archivo *hosts*
@@ -36,9 +33,6 @@ Añadir línea:
 ```
 127.0.0.1   marisma.intranet
 ```
-
-### 📸 *Captura 2*
-![captura2](ruta.png)
 
 ---
 
@@ -56,9 +50,6 @@ Modificar:
 ServerTokens Prod
 ```
 
-### 📸 *Captura 3*
-![captura3](ruta.png)
-
 ---
 
 ### 4️⃣ Cambiar **ServerSignature** y probar páginas de error
@@ -74,9 +65,6 @@ Prueba generando una página de error:
 ```
 http://localhost/error404
 ```
-
-### 📸 *Captura 4*
-![captura4](ruta.png)
 
 ---
 
@@ -94,9 +82,6 @@ echo "<h1>Carpeta prueba</h1>" | sudo tee /var/www/html/prueba/index.html
 echo "<h1>Carpeta prueba2</h1>" | sudo tee /var/www/html/prueba2/index.html
 ```
 
-### 📸 *Captura 5*
-![captura5](ruta.png)
-
 ---
 
 ### 6️⃣ Redireccionar la carpeta *prueba* hacia *prueba2*
@@ -107,9 +92,6 @@ En el VirtualHost:
 Redirect /prueba /prueba2
 ```
 
-### 📸 *Captura 6*
-![captura6](ruta.png)
-
 ---
 
 ### 7️⃣ Redireccionar solo una página  
@@ -118,9 +100,6 @@ Ejemplo:
 ```
 Redirect /prueba/pagina.html /prueba2/pagina.html
 ```
-
-### 📸 *Captura 7*
-![captura7](ruta.png)
 
 ---
 
@@ -139,9 +118,6 @@ Esto habilita:
 /home/usuario/public_html
 ```
 
-### 📸 *Captura 8*
-![captura8](ruta.png)
-
 ---
 
 ### 9️⃣ Usar directiva **Alias**
@@ -151,9 +127,6 @@ Ejemplo:
 ```
 Alias /docs /home/usuario/documentos
 ```
-
-### 📸 *Captura 9*
-![captura9](ruta.png)
 
 ---
 
@@ -165,9 +138,6 @@ Ejemplo de desactivar listado:
 ```
 Options -Indexes
 ```
-
-### 📸 *Captura 10*
-![captura10](ruta.png)
 
 ---
 

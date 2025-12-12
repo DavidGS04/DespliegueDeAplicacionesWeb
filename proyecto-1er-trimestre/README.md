@@ -535,12 +535,16 @@ http://servidor2.centro.intranet:8080/phpmyadmin
 
 - WordPress: `http://centro.intranet`
   ![Captura1](/recursos/55.png)
+
 - Python + autenticación: `http://departamentos.centro.intranet`
   ![Captura1](/recursos/36.png)
+
 - AWStats: `http://centro.intranet/awstats/awstats.pl?config=centro.intranet`
   ![Captura1](/recursos/46.png)
+
 - Nginx + PHP: `http://servidor2.centro.intranet:8080/info.php`
   ![Captura1](/recursos/52.png)
+
 - phpMyAdmin en Nginx: `http://servidor2.centro.intranet:8080/phpmyadmin/`
   ![Captura1](/recursos/54.png)
 

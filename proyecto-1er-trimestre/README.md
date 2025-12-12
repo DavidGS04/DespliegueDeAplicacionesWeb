@@ -151,7 +151,7 @@ Contenido:
 
 ---
 
-## 4.2️⃣ Activar mod_wsgi (PASO OBLIGATORIO)
+## 4.2 Activar mod_wsgi
 
 ⚠️ **Este paso debe realizarse ANTES de crear el VirtualHost de Python**,  
 ya que Apache necesita cargar el módulo para reconocer las directivas WSGI.
@@ -465,3 +465,4 @@ sudo tail -f /var/log/nginx/*.log
 ---
 
 ## ✅ Práctica finalizada
+

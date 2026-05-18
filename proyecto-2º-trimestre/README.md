@@ -1,7 +1,6 @@
 # 🌐 Proyecto Práctico - Infraestructura de Servidor Web y Servicios de Red (DAW 2025/26)
 
 **Autor:** David Garrido Suárez
-
 **Sistema Operativo:** Ubuntu Desktop 24.04 LTS sobre VirtualBox
 **Configuración de red:** Adaptador Puente (Bridged Adapter)
 **IP del servidor:** 192.168.1.135

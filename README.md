@@ -12,12 +12,7 @@
 # 📂 Estructura del Repositorio
 
 ```text
-tareas-despliegue-aplicaciones-web/
-│
-├── tema1/
-│   ├── Activity1/
-│   ├── Activity2/
-│   └── Activity5/
+DespliegueDeAplicacionesWeb/
 │
 ├── actividades_docker/
 │   ├── actividad1/
@@ -25,13 +20,23 @@ tareas-despliegue-aplicaciones-web/
 │   ├── actividad3/
 │   ├── actividad4/
 │   ├── actividad5/
-│   └── actividad6/
+│   ├── actividad6/
+│   └── README.md
+│
+├── proyecto-1er-trimestre/
+│   └── README.md
+│
+├── proyecto-2º-trimestre/
+│   └── README.md
 │
 ├── recursos/
 │
-├── proyecto-2º-trimestre
+├── tema1/
+│   ├── Activity1/
+│   ├── Activity2/
+│   └── Activity5/
 │
-└── proyecto-1er-trimestre/
+└── README.md
 ```
 
 ---
@@ -64,6 +69,7 @@ tareas-despliegue-aplicaciones-web/
 | Nº | Proyecto | Descripción | Enlace |
 |----|----------|-------------|--------|
 | 1️⃣ | Servidores web | Proyecto 1º trimestre | [📁 Abrir](./proyecto-1er-trimestre/README.md) |
+| 2️⃣ | Docker | Proyecto 2º trimestre | [📁 Abrir](./proyecto-2º-trimestre/README.md) |
 
 ---
 

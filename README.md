@@ -69,7 +69,7 @@ DespliegueDeAplicacionesWeb/
 | Nº | Proyecto | Descripción | Enlace |
 |----|----------|-------------|--------|
 | 1️⃣ | Servidores web | Proyecto 1º trimestre | [📁 Abrir](./proyecto-1er-trimestre/README.md) |
-| 2️⃣ | Docker | Proyecto 2º trimestre | [📁 Abrir](./proyecto-2º-trimestre/README.md) |
+| 2️⃣ | Infraestructura y Servicios de Red | Proyecto 2º trimestre | [📁 Abrir](./proyecto-2º-trimestre/README.md) |
 
 ---
 
